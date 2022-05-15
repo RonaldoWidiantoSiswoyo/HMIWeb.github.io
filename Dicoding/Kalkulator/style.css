@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: url(tokyo.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+
+  /* properti pendukung */
+  max-width: 500px;
+  margin: auto;
+  text-align: right;
+  margin-top: 20px;
+}
+.flex-container-row {
+  display: flex;
+}
+.button {
+  flex-basis: 25%;
+
+  /* properti pendukung */
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid black;
+  background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+  cursor: pointer;
+}
+.double {
+  flex-basis: 50%;
+}
+.display {
+  color: black;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid black;
+  font-size: 2em;
+}
+.operator,
+.negative,
+.equals {
+  background: orange;
+}
+/* .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 20px;
+} */
+.button:hover {
+  font-weight: bold;
+}
+/* @media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+ } */
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+  background-color: #fff;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: orange;
+  color: white;
+}
+tr:nth-child(even) {
+  background: #d2d2d2;
+}
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
+  .history {
+    width: 100%;
+  }
+}
